@@ -51,8 +51,18 @@ function timeASM() {
     alert("Частка: " + (a / b));
 }
 
+function bigImg(x) {
+  x.style.height = "260px";
+  x.style.width = "340px";
+}
+
+function normalImg(x) {
+  x.style.height = "240px";
+  x.style.width = "320px";
+}
+
 // виклик функції після завантаження сторінки
-window.onload = timeASM;
+window.onload = timeASM; // виклик гарантує, що функція виконається після завантаження сторінки
 
 myFunc();
 timeFunc();
