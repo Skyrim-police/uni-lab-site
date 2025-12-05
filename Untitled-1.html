@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Мови програмування.</h1> <!-- заголовок з тегом h1 -->
+<h3>Цитати великих програмістів:</h3>
+
+<div id="myBox" class="box1">Привіт, це рамка!</div>
+
+<br>
+
+<a href="https://www.w3schools.com/cpp/cpp_function_reference.asp">Посилання на сайт з вивченння мов програмування</a> 
+<br><br>
+
+<!-- Контейнер для картинки з описом -->
+<div style="text-align: center; margin: 20px 0;">
+  <img src="image.jpg" width="320" height="240" alt="Мови програмування"> 
+  <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;">Ілюстрація мов програмування</p>
+</div>
+
+<br>
+
+<b>Таблиця.</b> <!-- жирний текст, (bold text) -->
+<table style="width:50%; border:2px solid black; background-color:lightyellow;">      <!-- таблиця -->
+  <tr>
+    <th>Мова програмування</th>
+    <th>Призначенння</th>
+  </tr>
+  <tr>
+    <td><a href="Untitled-2.html">C++</a></td>
+    <td>Розширення C з підтримкою об'єктно-орієнтованого програмування; ігри, графіка, ПЗ.</td>
+  </tr>
+  <tr>
+    <td><a href="Untitled-3.html">Assembly</a></td>
+    <td>Низькорівневе програмування, прямий контроль над процесором та пам'яттю.</td>
+  </tr>
+  <tr>
+    <td><a href="Untitled-4.html">C#</a></td>
+    <td>Розробка додатків під <mark>Windows</mark>, веб-сервіси, Unity (ігри).</td>
+  </tr>
+  <tr>
+    <td><a href="Untitled-5.html">Java</a></td>
+    <td>Кросплатформенні застосунки, <mark>Android</mark>, корпоративні системи.</td> <!-- The HTML <mark> defines text that should be marked -->
+  </tr>
+</table> 
+
+<br>
+
+<b>5 цікавих фактів про С++.</b> 
+<ul type="square"> <!-- маркований список(Unordered) ul --> <!--s список(ordered) <ol> tag--> 
+  <li>Створена у 1983 році Б'ярне Страуструпом як розширення мови C.</li>
+  <li>Підтримує як процедурне, так і об'єктно-орієнтоване програмування.</li>
+  <li>Використовується для створення ігор, операційних систем, браузерів.</li>
+  <li>Має високу швидкодію, майже як асемблер.</li>
+  <li>Назва "C++" означає "C з інкрементом" (покращена версія C).</li>
+  <li><del>С++ це мова розмітки</del></li>
+</ul> 
+
+<p><mark><strong>C++ не є мовою розмітки, це мова програмування.</strong></mark></p> <!-- <strong> тег який виділяє важливий текст сильніше ніж, (bold text) -->
+<br>
+
+<b>Відео про порівняння швидкості роботи різних мов програмування.</b> 
+<br>
+
+<!-- Контейнер для відео з центруванням -->
+<div style="text-align: center; margin: 20px 0;">
+  <video width="720" height="480" autoplay muted controls> <!-- форма на відео. ,буде відтворюватись автмоатично без звуку  -->
+    <source src="movie.mp4" type="video/mp4">
+  </video>
+</div>
+
+<br>
+
+<footer>
+  <div class="footer" style="background-color: lightblue; padding: 3px;">
+  <p style="color:red;">Поточний час:</p>
+
+  <div style="display: flex; gap: 2px;">
+    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;">Час в Києві: <b id="current-time"></b></div>
+    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;">Час в Лондоні: <b id="current-time-london"></b></div>
+    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;">Час в Астані: <b id="current-time-astana"></b></div>
+    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;">Час в Токіо: <b id="current-time-tokyo"></b></div>
+  </div>
+</div>
+</footer>
+
+<script src="Untitled-1.js"></script>
+
+</body>
+</html>
