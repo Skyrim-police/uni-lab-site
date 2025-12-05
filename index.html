@@ -8,64 +8,71 @@
 </head>
 <body>
 
-<h1>Мови програмування.</h1> <!-- заголовок з тегом h1 -->
-<h3>Цитати великих програмістів:</h3>
+<!-- Кнопка перемикання мови -->
+<div style="text-align: right; padding: 10px;">
+  <button id="language-toggle" onclick="toggleLanguage()" style="padding: 8px 16px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+    🌐 EN
+  </button>
+</div>
+
+<h1 data-i18n="title">Мови програмування.</h1> <!-- заголовок з тегом h1 -->
+<h3 data-i18n="quotes">Цитати великих програмістів:</h3>
 
 <div id="myBox" class="box1">Привіт, це рамка!</div>
 
 <br>
 
-<a href="https://www.w3schools.com/cpp/cpp_function_reference.asp">Посилання на сайт з вивченння мов програмування</a> 
+<a href="https://www.w3schools.com/cpp/cpp_function_reference.asp" data-i18n="linkText">Посилання на сайт з вивченння мов програмування</a> 
 <br><br>
 
 <!-- Контейнер для картинки з описом -->
 <div style="text-align: center; margin: 20px 0;">
   <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" src="images/image.jpg" width="320" height="240" alt="Мови програмування"> 
-  <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;">Ілюстрація мов програмування</p>
+  <p style="margin-top: 10px; font-style: italic; color: #7f8c8d;" data-i18n="imageCaption">Ілюстрація мов програмування</p>
 </div>
 
 <br>
 
-<b>Таблиця.</b> <!-- жирний текст, (bold text) -->
+<b data-i18n="tableTitle">Таблиця.</b> <!-- жирний текст, (bold text) -->
 <table style="width:50%; border:2px solid black; background-color:lightyellow;">      <!-- таблиця -->
   <tr>
-    <th>Мова програмування</th>
-    <th>Призначенння</th>
+    <th data-i18n="tableHeader1">Мова програмування</th>
+    <th data-i18n="tableHeader2">Призначенння</th>
   </tr>
   <tr>
     <td><a href="pages/Untitled-2.html">C++</a></td>
-    <td>Розширення C з підтримкою об'єктно-орієнтованого програмування; ігри, графіка, ПЗ.</td>
+    <td data-i18n="cppPurpose">Розширення C з підтримкою об'єктно-орієнтованого програмування; ігри, графіка, ПЗ.</td>
   </tr>
   <tr>
     <td><a href="pages/Untitled-3.html">Assembly</a></td>
-    <td>Низькорівневе програмування, прямий контроль над процесором та пам'яттю.</td>
+    <td data-i18n="asmPurpose">Низькорівневе програмування, прямий контроль над процесором та пам'яттю.</td>
   </tr>
   <tr>
     <td><a href="pages/Untitled-4.html">C#</a></td>
-    <td>Розробка додатків під <mark>Windows</mark>, веб-сервіси, Unity (ігри).</td>
+    <td data-i18n="csharpPurpose">Розробка додатків під <mark>Windows</mark>, веб-сервіси, Unity (ігри).</td>
   </tr>
   <tr>
     <td><a href="pages/Untitled-5.html">Java</a></td>
-    <td>Кросплатформенні застосунки, <mark>Android</mark>, корпоративні системи.</td> <!-- The HTML <mark> defines text that should be marked -->
+    <td data-i18n="javaPurpose">Кросплатформенні застосунки, <mark>Android</mark>, корпоративні системи.</td> <!-- The HTML <mark> defines text that should be marked -->
   </tr>
 </table> 
 
 <br>
 
-<b>5 цікавих фактів про С++.</b> 
+<b data-i18n="factsTitle">5 цікавих фактів про С++.</b> 
 <ul type="square"> <!-- маркований список(Unordered) ul --> <!--s список(ordered) <ol> tag--> 
-  <li>Створена у 1983 році Б'ярне Страуструпом як розширення мови C.</li>
-  <li>Підтримує як процедурне, так і об'єктно-орієнтоване програмування.</li>
-  <li>Використовується для створення ігор, операційних систем, браузерів.</li>
-  <li>Має високу швидкодію, майже як асемблер.</li>
-  <li>Назва "C++" означає "C з інкрементом" (покращена версія C).</li>
-  <li><del>С++ це мова розмітки</del></li>
+  <li data-i18n="fact1">Створена у 1983 році Б'ярне Страуструпом як розширення мови C.</li>
+  <li data-i18n="fact2">Підтримує як процедурне, так і об'єктно-орієнтоване програмування.</li>
+  <li data-i18n="fact3">Використовується для створення ігор, операційних систем, браузерів.</li>
+  <li data-i18n="fact4">Має високу швидкодію, майже як асемблер.</li>
+  <li data-i18n="fact5">Назва "C++" означає "C з інкрементом" (покращена версія C).</li>
+  <li><del data-i18n="fact6">С++ це мова розмітки</del></li>
 </ul> 
 
-<p><mark><strong>C++ не є мовою розмітки, це мова програмування.</strong></mark></p> <!-- <strong> тег який виділяє важливий текст сильніше ніж, (bold text) -->
+<p><mark><strong data-i18n="warning">C++ не є мовою розмітки, це мова програмування.</strong></mark></p> <!-- <strong> тег який виділяє важливий текст сильніше ніж, (bold text) -->
 <br>
 
-<b>Відео про порівняння швидкості роботи різних мов програмування.</b> 
+<b data-i18n="videoTitle">Відео про порівняння швидкості роботи різних мов програмування.</b> 
 <br>
 
 <!-- Контейнер для відео з центруванням -->
@@ -79,13 +86,13 @@
 
 <footer>
   <div class="footer" style="background-color: lightblue; padding: 3px;">
-  <p style="color:red;">Поточний час:</p>
+  <p style="color:red;" data-i18n="currentTime">Поточний час:</p>
 
   <div style="display: flex; gap: 2px;">
-    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;">Час в Києві: <b id="current-time"></b></div>
-    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;">Час в Лондоні: <b id="current-time-london"></b></div>
-    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;">Час в Астані: <b id="current-time-astana"></b></div>
-    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;">Час в Токіо: <b id="current-time-tokyo"></b></div>
+    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;"><span data-i18n="timeKyiv">Час в Києві:</span> <b id="current-time"></b></div>
+    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;"><span data-i18n="timeLondon">Час в Лондоні:</span> <b id="current-time-london"></b></div>
+    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;"><span data-i18n="timeAstana">Час в Астані:</span> <b id="current-time-astana"></b></div>
+    <div class="time-section" style="border: 2px solid blue; border-radius: 10px; padding: 10px;"><span data-i18n="timeTokyo">Час в Токіо:</span> <b id="current-time-tokyo"></b></div>
   </div>
 </div>
 </footer>
