@@ -1,17 +1,65 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<meta charset="UTF-8">
-<title>Math test</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<h3>Результати:</h3>
-<h1 id="math5">Привіт, це рамка!</h1>
+<!-- Навігаційне меню -->
+<nav id="main-nav">
+  <ul>
+    <li><a href="../index.html" class="nav-link">🏠 Головна</a></li>
+    <li><a href="Untitled-2.html" class="nav-link">C++</a></li>
+    <li><a href="Untitled-3.html" class="nav-link">Assembly</a></li>
+    <li><a href="Untitled-4.html" class="nav-link">C#</a></li>
+    <li><a href="Untitled-5.html" class="nav-link">Java</a></li>
+  </ul>
+</nav>
 
-<!-- Підключаємо зовнішній JS -->
-<script src="Untitled-1.js"></script>
+<!-- Select меню -->
+<div style="text-align: center; margin: 20px; padding: 15px; background-color: #ecf0f1; border-radius: 8px;">
+  <form>
+    <label for="page-select" data-i18n="navigateLabel" style="font-weight: bold; margin-right: 10px; font-size: 16px;">Перейти на сторінку:</label>
+    <select id="page-select" onchange="navigateToPage()" style="padding: 10px 20px; font-size: 16px; border: 2px solid #3498db; border-radius: 5px; cursor: pointer; background-color: white;">
+      <option value="" data-i18n="selectOption">-- Оберіть сторінку --</option>
+      <option value="../index.html">🏠 Головна</option>
+      <option value="Untitled-2.html">C++</option>
+      <option value="Untitled-3.html">Assembly</option>
+      <option value="Untitled-4.html">C#</option>
+      <option value="Untitled-5.html">Java</option>
+    </select>
+  </form>
+</div>
 
+<!-- Кнопка перемикання мови -->
+<div style="text-align: right; padding: 10px;">
+  <button id="language-toggle" onclick="toggleLanguage()" style="padding: 8px 16px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+    🌐 EN
+  </button>
+</div>
+
+<div style="padding: 20px;">
+  <h1 data-i18n="javaTitle">Мова програмування Java</h1>
+
+  <p data-i18n="javaDescription">Java — одна з найпопулярніших мов програмування у світі, створена компанією Sun Microsystems у 1995 році.</p>
+
+  <img src="java.png" alt="Логотип Java" width="400" height="200">
+
+  <h2 data-i18n="javaFeaturesTitle">Основні особливості:</h2>
+  <ul>
+    <li data-i18n="javaFeature1">Кросплатформенність: "Напиши один раз, запускай скрізь" (Write Once, Run Anywhere).</li>
+    <li data-i18n="javaFeature2">Використовується для розробки Android-додатків, веб-застосунків та корпоративних систем.</li>
+    <li data-i18n="javaFeature3">Має автоматичне управління пам'яттю через збирач сміття (Garbage Collector).</li>
+    <li data-i18n="javaFeature4">Підтримує об'єктно-орієнтоване програмування та багатопоточність.</li>
+  </ul>
+
+  <p data-i18n="javaWiki">Детальніше про Java можна дізнатися на <a href="https://uk.wikipedia.org/wiki/Java">Вікіпедії</a>.</p>
+</div>
+
+<script src="../js/script.js"></script>
 </body>
 </html>
 

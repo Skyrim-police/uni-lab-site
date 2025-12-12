@@ -8,6 +8,32 @@
 </head>
 <body>
 
+<!-- ЗАВДАННЯ 4: Статичне меню навігації -->
+<nav id="main-nav">
+  <ul>
+    <li><a href="index.html" class="nav-link">🏠 Головна</a></li>
+    <li><a href="pages/Untitled-2.html" class="nav-link">C++</a></li>
+    <li><a href="pages/Untitled-3.html" class="nav-link">Assembly</a></li>
+    <li><a href="pages/Untitled-4.html" class="nav-link">C#</a></li>
+    <li><a href="pages/Untitled-5.html" class="nav-link">Java</a></li>
+  </ul>
+</nav>
+
+<!-- ЗАВДАННЯ 5: Меню на основі select -->
+<div style="text-align: center; margin: 20px 0; padding: 15px; background-color: #ecf0f1; border-radius: 8px;">
+  <form>
+    <label for="page-select" style="font-weight: bold; margin-right: 10px; font-size: 16px;" data-i18n="navigateLabel">Перейти на сторінку:</label>
+    <select id="page-select" onchange="navigateToPage()" style="padding: 10px 20px; font-size: 16px; border: 2px solid #3498db; border-radius: 5px; cursor: pointer; background-color: white;">
+      <option value="" data-i18n="selectOption">-- Оберіть сторінку --</option>
+      <option value="index.html">🏠 Головна</option>
+      <option value="pages/Untitled-2.html">C++</option>
+      <option value="pages/Untitled-3.html">Assembly</option>
+      <option value="pages/Untitled-4.html">C#</option>
+      <option value="pages/Untitled-5.html">Java</option>
+    </select>
+  </form>
+</div>
+
 <!-- Кнопка перемикання мови -->
 <div style="text-align: right; padding: 10px;">
   <button id="language-toggle" onclick="toggleLanguage()" style="padding: 8px 16px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
@@ -34,28 +60,57 @@
 <br>
 
 <b data-i18n="tableTitle">Таблиця.</b> <!-- жирний текст, (bold text) -->
-<table style="width:50%; border:2px solid black; background-color:lightyellow;">      <!-- таблиця -->
-  <tr>
-    <th data-i18n="tableHeader1">Мова програмування</th>
-    <th data-i18n="tableHeader2">Призначенння</th>
-  </tr>
-  <tr>
-    <td><a href="pages/Untitled-2.html">C++</a></td>
-    <td data-i18n="cppPurpose">Розширення C з підтримкою об'єктно-орієнтованого програмування; ігри, графіка, ПЗ.</td>
-  </tr>
-  <tr>
-    <td><a href="pages/Untitled-3.html">Assembly</a></td>
-    <td data-i18n="asmPurpose">Низькорівневе програмування, прямий контроль над процесором та пам'яттю.</td>
-  </tr>
-  <tr>
-    <td><a href="pages/Untitled-4.html">C#</a></td>
-    <td data-i18n="csharpPurpose">Розробка додатків під <mark>Windows</mark>, веб-сервіси, Unity (ігри).</td>
-  </tr>
-  <tr>
-    <td><a href="pages/Untitled-5.html">Java</a></td>
-    <td data-i18n="javaPurpose">Кросплатформенні застосунки, <mark>Android</mark>, корпоративні системи.</td> <!-- The HTML <mark> defines text that should be marked -->
-  </tr>
-</table> 
+
+<div style="display: flex; gap: 20px; align-items: stretch;"> <!-- strech вказує, що елементи таблиці по висоті мають бути вирівняні по найбільшому елементу (таблиці зліва) -->
+  <!-- Таблиця -->
+  <table style="border:2px solid black; background-color:lightyellow;">
+    <tr>
+      <th data-i18n="tableHeader1">Мова програмування</th>
+      <th data-i18n="tableHeader2">Призначенння</th>
+      <th data-i18n="tableHeader3">Показ картинки</th>
+    </tr>
+    <tr>
+      <td><a href="pages/Untitled-2.html">C++</a></td>
+      <td data-i18n="cppPurpose">Розширення C з підтримкою об'єктно-орієнтованого програмування; ігри, графіка, ПЗ.</td>
+      <td style="text-align: center;">
+        <input type="radio" name="language-logo" value="cpp" onchange="showLanguageLogo(this.value)">
+      </td>
+    </tr>
+    <tr>
+      <td><a href="pages/Untitled-3.html">Assembly</a></td>
+      <td data-i18n="asmPurpose">Низькорівневе програмування, прямий контроль над процесором та пам'яттю.</td>
+      <td style="text-align: center;">
+        <input type="radio" name="language-logo" value="asm" onchange="showLanguageLogo(this.value)">
+      </td>
+    </tr>
+    <tr>
+      <td><a href="pages/Untitled-4.html">C#</a></td>
+      <td data-i18n="csharpPurpose">Розробка додатків під <mark>Windows</mark>, веб-сервіси, Unity (ігри).</td>
+      <td style="text-align: center;">
+        <input type="radio" name="language-logo" value="csharp" onchange="showLanguageLogo(this.value)">
+      </td>
+    </tr>
+    <tr>
+      <td><a href="pages/Untitled-5.html">Java</a></td>
+      <td data-i18n="javaPurpose">Кросплатформенні застосунки, <mark>Android</mark>, корпоративні системи.</td>
+      <td style="text-align: center;">
+        <input type="radio" name="language-logo" value="java" onchange="showLanguageLogo(this.value)">
+      </td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td data-i18n="pythonPurpose">Веб-розробка, наука про дані, машинне навчання, автоматизація.</td>
+      <td style="text-align: center;">
+        <input type="radio" name="language-logo" value="python" onchange="showLanguageLogo(this.value)">
+      </td>
+    </tr>
+  </table>
+
+  <!-- Контейнер для показу логотипу -->
+  <div id="logo-container" style="border: 2px solid #3498db; border-radius: 10px; padding: 20px; width: 300px; display: flex; align-items: center; justify-content: center; background-color: #f8f9fa;">
+    <p style="color: #7f8c8d; font-style: italic;" data-i18n="selectLanguage">Оберіть мову програмування</p>
+  </div>
+</div> 
 
 <br>
 

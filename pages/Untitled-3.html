@@ -1,32 +1,62 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Assembly</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<script src="Untitled-1.js"></script>
-<h1>Мова програмування Assembly (ASM)</h1>
+<!-- Навігаційне меню -->
+<nav id="main-nav">
+  <ul>
+    <li><a href="../index.html" class="nav-link">🏠 Головна</a></li>
+    <li><a href="Untitled-2.html" class="nav-link">C++</a></li>
+    <li><a href="Untitled-3.html" class="nav-link">Assembly</a></li>
+    <li><a href="Untitled-4.html" class="nav-link">C#</a></li>
+    <li><a href="Untitled-5.html" class="nav-link">Java</a></li>
+  </ul>
+</nav>
 
-<p>Assembly — низькорівнева мова програмування, яка дає прямий контроль над процесором і пам’яттю.</p>
+<!-- Select меню -->
+<div style="text-align: center; margin: 20px; padding: 15px; background-color: #ecf0f1; border-radius: 8px;">
+  <form>
+    <label for="page-select" data-i18n="navigateLabel" style="font-weight: bold; margin-right: 10px; font-size: 16px;">Перейти на сторінку:</label>
+    <select id="page-select" onchange="navigateToPage()" style="padding: 10px 20px; font-size: 16px; border: 2px solid #3498db; border-radius: 5px; cursor: pointer; background-color: white;">
+      <option value="" data-i18n="selectOption">-- Оберіть сторінку --</option>
+      <option value="../index.html">🏠 Головна</option>
+      <option value="Untitled-2.html">C++</option>
+      <option value="Untitled-3.html">Assembly</option>
+      <option value="Untitled-4.html">C#</option>
+      <option value="Untitled-5.html">Java</option>
+    </select>
+  </form>
+</div>
+
+<!-- Кнопка перемикання мови -->
+<div style="text-align: right; padding: 10px;">
+  <button id="language-toggle" onclick="toggleLanguage()" style="padding: 8px 16px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+    🌐 EN
+  </button>
+</div>
+
+<div style="padding: 20px;">
+<h1 data-i18n="asmTitle">Мова програмування Assembly (ASM)</h1>
+
+<p data-i18n="asmDescription">Assembly — низькорівнева мова програмування, яка дає прямий контроль над процесором і пам'яттю.</p>
 
 <img src="asm.png" alt="Логотип ASM" width="620" height="180">
 
 <ul>
-  <li>Використовується для системного програмування та драйверів.</li>
-  <li>Дозволяє писати дуже швидкий та оптимізований код.</li>
-  <li>Зазвичай застосовується для критичних частин програм і операційних систем.</li>
+  <li data-i18n="asmFact1">Використовується для системного програмування та драйверів.</li>
+  <li data-i18n="asmFact2">Дозволяє писати дуже швидкий та оптимізований код.</li>
+  <li data-i18n="asmFact3">Зазвичай застосовується для критичних частин програм і операційних систем.</li>
 </ul>
 
-<br>
-  <h1>Математичні операції</h1>
-</head>
-  <h2>Результати обчислень:</h2>
-  <div id="math5" class="box1">Привіт, це рамка!</div>
-<br>
+<p data-i18n="asmWiki">Детальніше про Assembly можна дізнатися на <a href="https://uk.wikipedia.org/wiki/Assembly">Вікіпедії</a>.</p>
+</div>
 
-<p>Детальніше про Assembly можна дізнатися на <a href="https://uk.wikipedia.org/wiki/Assembly">Вікіпедії</a>.</p>
-
+<script src="../js/script.js"></script>
 </body>
 </html>

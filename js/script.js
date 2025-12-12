@@ -72,10 +72,15 @@ const translations = {
         tableTitle: "Таблиця.",
         tableHeader1: "Мова програмування",
         tableHeader2: "Призначенння",
+        tableHeader3: "Показ картинки",
+        selectLanguage: "Оберіть мову програмування",
+        navigateLabel: "Перейти на сторінку:",
+        selectOption: "-- Оберіть сторінку --",
         cppPurpose: "Розширення C з підтримкою об'єктно-орієнтованого програмування; ігри, графіка, ПЗ.",
         asmPurpose: "Низькорівневе програмування, прямий контроль над процесором та пам'яттю.",
         csharpPurpose: "Розробка додатків під Windows, веб-сервіси, Unity (ігри).",
         javaPurpose: "Кросплатформенні застосунки, Android, корпоративні системи.",
+        pythonPurpose: "Веб-розробка, наука про дані, машинне навчання, автоматизація.",
         factsTitle: "5 цікавих фактів про С++.",
         fact1: "Створена у 1983 році Б'ярне Страуструпом як розширення мови C.",
         fact2: "Підтримує як процедурне, так і об'єктно-орієнтоване програмування.",
@@ -89,7 +94,36 @@ const translations = {
         timeKyiv: "Час в Києві:",
         timeLondon: "Час в Лондоні:",
         timeAstana: "Час в Астані:",
-        timeTokyo: "Час в Токіо:"
+        timeTokyo: "Час в Токіо:",
+        cppTitle: "Мова програмування C++",
+        cppDescription: "C++ — потужна мова програмування, яка використовується для створення ігор, програм і системного ПЗ.",
+        cppFact1: "Створена у 1983 році Б'ярне Страуструпом.",
+        cppFact2: "Підтримує процедурне та об'єктно-орієнтоване програмування.",
+        cppFact3: "Має високу швидкодію.",
+        cppWiki: "Детальніше про C++ можна дізнатися на Вікіпедії.",
+        asmTitle: "Мова програмування Assembly (ASM)",
+        asmDescription: "Assembly — низькорівнева мова програмування, яка дає прямий контроль над процесором і пам'яттю.",
+        asmFact1: "Використовується для системного програмування та драйверів.",
+        asmFact2: "Дозволяє писати дуже швидкий та оптимізований код.",
+        asmFact3: "Зазвичай застосовується для критичних частин програм і операційних систем.",
+        asmWiki: "Детальніше про Assembly можна дізнатися на Вікіпедії.",
+        csharpTitle: "Мова програмування C#",
+        csharpBox1Title: "Що таке C#",
+        csharpBox1Text: "C# — це сучасна, об'єктно-орієнтована мова програмування, створена компанією Microsoft для платформи .NET.",
+        csharpBox2Title: "Сфера використання",
+        csharpBox2Text: "C# використовують для створення десктопних застосунків, веб-сервісів, ігор на Unity, мобільних додатків і навіть ШІ-систем.",
+        csharpBox3Title: "Переваги",
+        csharpBox3Text: "Простий синтаксис, висока безпека, автоматичне керування пам'яттю та інтеграція з .NET Framework.",
+        csharpBox4Title: "Цікавий факт",
+        csharpBox4Text: "Назва C# походить від ноти \"до-дієз\" у музиці (C-sharp), що символізує \"покращену версію C\".",
+        javaTitle: "Мова програмування Java",
+        javaDescription: "Java — одна з найпопулярніших мов програмування у світі, створена компанією Sun Microsystems у 1995 році.",
+        javaFeaturesTitle: "Основні особливості:",
+        javaFeature1: "Кросплатформенність: \"Напиши один раз, запускай скрізь\" (Write Once, Run Anywhere).",
+        javaFeature2: "Використовується для розробки Android-додатків, веб-застосунків та корпоративних систем.",
+        javaFeature3: "Має автоматичне управління пам'яттю через збирач сміття (Garbage Collector).",
+        javaFeature4: "Підтримує об'єктно-орієнтоване програмування та багатопоточність.",
+        javaWiki: "Детальніше про Java можна дізнатися на Вікіпедії."
     },
     en: {
         title: "Programming Languages.",
@@ -99,10 +133,15 @@ const translations = {
         tableTitle: "Table.",
         tableHeader1: "Programming Language",
         tableHeader2: "Purpose",
+        tableHeader3: "Show Image",
+        selectLanguage: "Select a programming language",
+        navigateLabel: "Go to page:",
+        selectOption: "-- Select a page --",
         cppPurpose: "C extension with object-oriented programming support; games, graphics, software.",
         asmPurpose: "Low-level programming, direct control over processor and memory.",
         csharpPurpose: "Windows application development, web services, Unity (games).",
         javaPurpose: "Cross-platform applications, Android, enterprise systems.",
+        pythonPurpose: "Web development, data science, machine learning, automation.",
         factsTitle: "5 interesting facts about C++.",
         fact1: "Created in 1983 by Bjarne Stroustrup as an extension of C language.",
         fact2: "Supports both procedural and object-oriented programming.",
@@ -116,7 +155,36 @@ const translations = {
         timeKyiv: "Time in Kyiv:",
         timeLondon: "Time in London:",
         timeAstana: "Time in Astana:",
-        timeTokyo: "Time in Tokyo:"
+        timeTokyo: "Time in Tokyo:",
+        cppTitle: "C++ Programming Language",
+        cppDescription: "C++ is a powerful programming language used for creating games, applications, and system software.",
+        cppFact1: "Created in 1983 by Bjarne Stroustrup.",
+        cppFact2: "Supports procedural and object-oriented programming.",
+        cppFact3: "Has high performance.",
+        cppWiki: "Learn more about C++ on Wikipedia.",
+        asmTitle: "Assembly Programming Language (ASM)",
+        asmDescription: "Assembly is a low-level programming language that provides direct control over the processor and memory.",
+        asmFact1: "Used for system programming and drivers.",
+        asmFact2: "Allows writing very fast and optimized code.",
+        asmFact3: "Usually applied to critical parts of programs and operating systems.",
+        asmWiki: "Learn more about Assembly on Wikipedia.",
+        csharpTitle: "C# Programming Language",
+        csharpBox1Title: "What is C#",
+        csharpBox1Text: "C# is a modern, object-oriented programming language created by Microsoft for the .NET platform.",
+        csharpBox2Title: "Area of Use",
+        csharpBox2Text: "C# is used for creating desktop applications, web services, Unity games, mobile apps, and even AI systems.",
+        csharpBox3Title: "Advantages",
+        csharpBox3Text: "Simple syntax, high security, automatic memory management, and integration with .NET Framework.",
+        csharpBox4Title: "Interesting Fact",
+        csharpBox4Text: "The name C# comes from the musical note \"C-sharp\", symbolizing an \"improved version of C\".",
+        javaTitle: "Java Programming Language",
+        javaDescription: "Java is one of the most popular programming languages in the world, created by Sun Microsystems in 1995.",
+        javaFeaturesTitle: "Key Features:",
+        javaFeature1: "Cross-platform: \"Write Once, Run Anywhere\" (WORA).",
+        javaFeature2: "Used for Android app development, web applications, and enterprise systems.",
+        javaFeature3: "Has automatic memory management through Garbage Collector.",
+        javaFeature4: "Supports object-oriented programming and multithreading.",
+        javaWiki: "Learn more about Java on Wikipedia."
     }
 };
 
@@ -157,9 +225,66 @@ function initializeLanguage() {
     }
 }
 
+// Функція для показу логотипу мови програмування
+function showLanguageLogo(language) {
+    const logoContainer = document.getElementById('logo-container');
+    
+    const logos = {
+        'cpp': 'images/cpp.png',
+        'asm': 'images/asm.png',
+        'csharp': 'images/Csharp_Logo.png',
+        'java': 'images/Java.png',
+        'python': 'images/python.png'
+    };
+    
+    const languageNames = {
+        'cpp': 'C++',
+        'asm': 'Assembly',
+        'csharp': 'C#',
+        'java': 'Java',
+        'python': 'Python'
+    };
+    
+    // Створюємо і показуємо зображення
+    if (logos[language]) {
+        logoContainer.innerHTML = `
+            <img src="${logos[language]}" 
+                 alt="${languageNames[language]} logo" 
+                 style="width: 100%; height: 100%; object-fit: contain; transition: transform 0.3s ease;"
+                 onmouseover="this.style.transform='scale(1.1)'"
+                 onmouseout="this.style.transform='scale(1)'">
+        `;
+    }
+}
+
+// select-меню
+function navigateToPage() {
+    const selectElement = document.getElementById('page-select');
+    const selectedPage = selectElement.value;
+    
+    // Якщо вибрана сторінка (не порожнє значення), переходимо на неї
+    if (selectedPage) {
+        window.location.href = selectedPage;
+    }
+}
+
+// ЗАВДАННЯ 4: Підсвічування активної сторінки в меню
+function highlightActivePage() {
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    navLinks.forEach(link => {
+        const linkPage = link.getAttribute('href').split('/').pop();
+        if (linkPage === currentPage) {
+            link.classList.add('active');
+        }
+    });
+}
+
 window.onload = function() {
     timeASM();
     initializeLanguage();
+    highlightActivePage(); // Підсвічуємо активну сторінку в меню
 }; // виклик гарантує, що функція виконається після завантаження сторінки
 
 myFunc();

@@ -1,23 +1,62 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>C++</title>  <!-- показує напис С++ зверху у браузері -->
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
-<h1>Мова програмування C++</h1>
+<!-- Навігаційне меню -->
+<nav id="main-nav">
+  <ul>
+    <li><a href="../index.html" class="nav-link">🏠 Головна</a></li>
+    <li><a href="Untitled-2.html" class="nav-link">C++</a></li>
+    <li><a href="Untitled-3.html" class="nav-link">Assembly</a></li>
+    <li><a href="Untitled-4.html" class="nav-link">C#</a></li>
+    <li><a href="Untitled-5.html" class="nav-link">Java</a></li>
+  </ul>
+</nav>
 
-<p>C++ — потужна мова програмування, яка використовується для створення ігор, програм і системного ПЗ.</p>
+<!-- Select меню -->
+<div style="text-align: center; margin: 20px; padding: 15px; background-color: #ecf0f1; border-radius: 8px;">
+  <form>
+    <label for="page-select" data-i18n="navigateLabel" style="font-weight: bold; margin-right: 10px; font-size: 16px;">Перейти на сторінку:</label>
+    <select id="page-select" onchange="navigateToPage()" style="padding: 10px 20px; font-size: 16px; border: 2px solid #3498db; border-radius: 5px; cursor: pointer; background-color: white;">
+      <option value="" data-i18n="selectOption">-- Оберіть сторінку --</option>
+      <option value="../index.html">🏠 Головна</option>
+      <option value="Untitled-2.html">C++</option>
+      <option value="Untitled-3.html">Assembly</option>
+      <option value="Untitled-4.html">C#</option>
+      <option value="Untitled-5.html">Java</option>
+    </select>
+  </form>
+</div>
+
+<!-- Кнопка перемикання мови -->
+<div style="text-align: right; padding: 10px;">
+  <button id="language-toggle" onclick="toggleLanguage()" style="padding: 8px 16px; background-color: #3498db; color: white; border: none; border-radius: 5px; cursor: pointer; font-size: 14px;">
+    🌐 EN
+  </button>
+</div>
+
+<div style="padding: 20px;">
+<h1 data-i18n="cppTitle">Мова програмування C++</h1>
+
+<p data-i18n="cppDescription">C++ — потужна мова програмування, яка використовується для створення ігор, програм і системного ПЗ.</p>
 
 <img src="cpp.png" alt="Логотип C++" width="620" height="380">  <!-- alt покаже напис якщо картинка не завантажиться -->
 
 <ul>
-  <li>Створена у 1983 році Б'ярне Страуструпом.</li>
-  <li>Підтримує процедурне та об’єктно-орієнтоване програмування.</li>
-  <li>Має високу швидкодію.</li>
+  <li data-i18n="cppFact1">Створена у 1983 році Б'ярне Страуструпом.</li>
+  <li data-i18n="cppFact2">Підтримує процедурне та об'єктно-орієнтоване програмування.</li>
+  <li data-i18n="cppFact3">Має високу швидкодію.</li>
 </ul>
 
-<p>Детальніше про C++ можна дізнатися на <a href="https://uk.wikipedia.org/wiki/C%2B%2B">Вікіпедії</a>.</p>
+<p data-i18n="cppWiki">Детальніше про C++ можна дізнатися на <a href="https://uk.wikipedia.org/wiki/C%2B%2B">Вікіпедії</a>.</p>
+</div>
 
+<script src="../js/script.js"></script>
 </body>
 </html>
